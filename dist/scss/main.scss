@@ -1,0 +1,30 @@
+
+    $primary-color:black;
+    $accent-color:red;
+    $text-color:#fff;
+
+    $font-weight:(
+        "regular":400,
+        "medium":500,
+        "bold":700
+    );
+
+body,p{
+    background-color:$primary-color;
+    color:$text-color;
+    
+}
+.main{
+    width: 80%;
+    margin:0 auto;
+    #{&}_paragraph{
+        font-weight: map-get($font-weight,bold);
+        color:green;
+
+        &:hover
+        {
+            color:pink;
+        }
+    }
+}
+
